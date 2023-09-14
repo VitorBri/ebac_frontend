@@ -1,34 +1,54 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Roboto , sans-serif;
+    font-family: Roboto , Arial, Helvetica, sans-serif;
 }
-body{
-    text-align: center;
-    background-color: #f0eaea;
+header , .formulario{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
-header{
-    margin-top: 250px;
+header h1{
+    font-size: 36px;
+    padding: 32px;
+}
+header {
+    margin-bottom:16px ;
 }
 form{
-    padding: 32px 0 ;
-    display: flex;
-    justify-content: center;
+    width: 50%;
+}
+form label {
+    font-size:20px ;
+    font-weight: bold;
 
 }
-form input, button {
+form input{
+    display: block;
+    padding:6px ;
+    width: 100%;
+    border-style: none;
+    border-bottom: 1px solid rgb(126, 124, 124)  ;
+    font-size:16px;
+    
+}
+input:focus{
+    outline: 0;
+}
+form .dados{
+    margin-bottom: 16px;
+}
+button{
+    width: 150px ;
+    font-size: 16px;
     padding: 8px;
-    font-size: 24px;
-}
-form button {
-    margin-left: 8px;
-    cursor: pointer;
     font-weight: bold;
-}
-ul {
+    font-style: italic;
     cursor: pointer;
 }
-.feito{
-    text-decoration: line-through;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
